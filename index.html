@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>Paper Plane</title>
+
+        <style>
+            body {
+                background: url(./resources/warioware2.png);
+                background-size: cover;
+                background-repeat: repeat;
+            }
+
+            h1 {
+                font-family: 'Raleway';
+                letter-spacing: 4px;
+                color: white;
+                text-align: center;
+                text-shadow: 0 0 2px rgba( 0, 0, 0, 0.8 );
+                text-transform: uppercase;
+            }
+
+            canvas {
+                display: block;
+                margin: 20px auto;
+                border: 1px solid rgba( 0, 50, 100, 0.4 );
+                box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.4 );
+            }
+
+            ::selection {
+                background: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Paper Plane</h1>
+
+        <audio autoplay>
+            <source src="./resources/WarioWaremusicPaperPlane.mp3" type="audio/mpeg">
+        </audio>
+
+        <canvas id="game" width="500" height="333"></canvas>
+
+        <script src="plane.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>
